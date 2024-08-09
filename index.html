@@ -32,16 +32,18 @@
         }
         .certificates-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr; /* 2 columns */
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
             gap: 20px;
         }
+
         .certificate {
             text-align: center;
         }
+
         iframe {
             border: none;
             width: 100%;
-            height: 500px; /* Increase height to show the full image */
+            height: 300px; /* Decrease height for smaller images */
         }
         .container {
             display: flex;
@@ -128,39 +130,45 @@
                     <h3>DataCamp Data Analyst</h3>
                     <iframe src="document/certificate/DataCamp DA.pdf"></iframe>
                 </div>
-            
+        
                 <div class="certificate">
                     <h3>Google Data Analyst</h3>
                     <iframe src="document/certificate/Google DA.pdf"></iframe>
                 </div>
-            
+        
                 <div class="certificate">
                     <h3>Google Business Intelligence</h3>
                     <iframe src="document/certificate/Google BI.pdf"></iframe>
                 </div>
-            
+        
                 <div class="certificate">
                     <h3>HackerRank SQL Advanced Certificate</h3>
                     <iframe src="document/certificate/HackerRank sql_advanced certificate.pdf"></iframe>
                 </div>
-            
-                <div class="certificate">
-                    <h3>DeepLearning.AI TensorFlow</h3>
-                    <iframe src="document/certificate/DeepLearning_AI Tensorflow .pdf"></iframe>
-                </div>
-            
+        
                 <div class="certificate">
                     <h3>AWS Academy Cloud Foundations Badge</h3>
                     <iframe src="document/certificate/AWS_Academy_Cloud_Foundations_Badge.pdf"></iframe>
                 </div>
-            
+        
                 <div class="certificate">
                     <h3>AWS Academy Machine Learning Foundations Badge</h3>
                     <iframe src="document/certificate/AWS_Academy_Machine_Learning_Foundations_Badge.pdf"></iframe>
                 </div>
+        
+                <div class="certificate">
+                    <h3>DeepLearning.AI TensorFlow</h3>
+                    <iframe src="document/certificate/DeepLearning_AI Tensorflow .pdf"></iframe>
+                </div>
+        
+                <div class="certificate">
+                    <h3>IBM Data Engineer Project</h3>
+                    <iframe src="document/certificate/IBM data engineer project.pdf"></iframe>
+                </div>
             </div>
         
         </section>
+        
         
     </main>
 </body>
