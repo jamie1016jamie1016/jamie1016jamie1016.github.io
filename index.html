@@ -5,31 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jamie Yan Portfolio</title>
     <style>
+        /* Dark mode color scheme */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #1e1e1e; /* Dark background */
+            color: #c9c9c9; /* Light text */
         }
+
         header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #333; /* Darker header background */
+            color: #f1f1f1;
             text-align: center;
             padding: 1em 0;
+            border-bottom: 2px solid #4CAF50; /* Green accent */
         }
+
         main {
             padding: 2em;
         }
+
         .project {
-            margin: 1em 0;
+            margin: 2em 0;
         }
+
         .project h2 {
             margin: 0.5em 0;
+            color: #4CAF50; /* Green accent for headings */
+            border-bottom: 1px solid #4CAF50;
+            padding-bottom: 10px;
         }
+
         .project p {
             margin: 0.5em 0;
         }
+
         .certificates-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr); /* 4 columns */
@@ -38,27 +49,72 @@
 
         .certificate {
             text-align: center;
+            background-color: #2a2a2a; /* Dark card background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .certificate:hover {
+            transform: translateY(-10px); /* Lift on hover */
         }
 
         iframe {
             border: none;
             width: 100%;
-            height: 300px; /* Decrease height for smaller images */
+            height: 400px;
+            background-color: #333; /* Background for iframe */
+            border-radius: 8px;
         }
+
         .container {
             display: flex;
             justify-content: space-between;
             gap: 20px;
         }
+
         .container > div {
             flex: 1;
         }
+
         .container table {
             width: 100%;
             border-spacing: 20px;
         }
+
         .container table td {
             vertical-align: top;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: #81c784; /* Lighter green on hover */
+        }
+
+        /* Add a footer */
+        footer {
+            background-color: #333;
+            color: #f1f1f1;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+            border-top: 2px solid #4CAF50; /* Green accent */
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #81c784;
         }
     </style>
 </head>
@@ -124,52 +180,53 @@
 
         <section class="project">
             <h2>My Certifications</h2>
-        
+
             <div class="certificates-grid">
                 <div class="certificate">
                     <h3>DataCamp Data Analyst</h3>
                     <iframe src="document/certificate/DataCamp DA.pdf"></iframe>
                 </div>
-        
-                <div class="certificate">
-                    <h3>Google Data Analyst</h3>
-                    <iframe src="document/certificate/Google DA.pdf"></iframe>
-                </div>
-        
-                <div class="certificate">
-                    <h3>Google Business Intelligence</h3>
-                    <iframe src="document/certificate/Google BI.pdf"></iframe>
-                </div>
-        
+            
                 <div class="certificate">
                     <h3>HackerRank SQL Advanced Certificate</h3>
                     <iframe src="document/certificate/HackerRank sql_advanced certificate.pdf"></iframe>
                 </div>
-        
+                
                 <div class="certificate">
-                    <h3>AWS Academy Cloud Foundations Badge</h3>
-                    <iframe src="document/certificate/AWS_Academy_Cloud_Foundations_Badge.pdf"></iframe>
+                    <h3>Google Data Analyst</h3>
+                    <iframe src="document/certificate/Google DA.pdf"></iframe>
                 </div>
-        
+            
                 <div class="certificate">
-                    <h3>AWS Academy Machine Learning Foundations Badge</h3>
-                    <iframe src="document/certificate/AWS_Academy_Machine_Learning_Foundations_Badge.pdf"></iframe>
+                    <h3>Google Business Intelligence</h3>
+                    <iframe src="document/certificate/Google BI.pdf"></iframe>
                 </div>
-        
-                <div class="certificate">
-                    <h3>DeepLearning.AI TensorFlow</h3>
-                    <iframe src="document/certificate/DeepLearning_AI Tensorflow .pdf"></iframe>
-                </div>
-        
+            
                 <div class="certificate">
                     <h3>IBM Data Engineer Project</h3>
                     <iframe src="document/certificate/IBM data engineer project.pdf"></iframe>
                 </div>
+            
+                <div class="certificate">
+                    <h3>DeepLearning.AI TensorFlow</h3>
+                    <iframe src="document/certificate/DeepLearning_AI Tensorflow .pdf"></iframe>
+                </div>
+                
+                <div class="certificate">
+                    <h3>AWS Academy Cloud Foundations</h3>
+                    <iframe src="document/certificate/AWS_Academy_Cloud_Foundations_Badge.pdf"></iframe>
+                </div>
+            
+                <div class="certificate">
+                    <h3>AWS Academy Machine Learning Foundations</h3>
+                    <iframe src="document/certificate/AWS_Academy_Machine_Learning_Foundations_Badge.pdf"></iframe>
+                </div>
             </div>
-        
         </section>
-        
-        
     </main>
+
+    <footer>
+        <p>© 2024 Jamie Yan | <a href="https://www.linkedin.com/in/jamieysh">LinkedIn</a> | <a href="mailto:jamieysh0910@gmail.com">Contact Me</a></p>
+    </footer>
 </body>
 </html>
