@@ -30,6 +30,34 @@
         .project p {
             margin: 0.5em 0;
         }
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 columns */
+            gap: 20px;
+        }
+        .certificate {
+            text-align: center;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 500px; /* Increase height to show the full image */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .container > div {
+            flex: 1;
+        }
+        .container table {
+            width: 100%;
+            border-spacing: 20px;
+        }
+        .container table td {
+            vertical-align: top;
+        }
     </style>
 </head>
 <body>
@@ -38,61 +66,98 @@
     </header>
     <main>
         <section class="project">
-            <h2>Reports</h2>
-            <p><a href="document/pdf/powerbi_hotel.pdf">Hotel Cancellation Reduction Report (PowerBI)</a></p>
-            <p><a href="document/pdf/aws_airline.pdf">Airline Delay Report (AWS, S3, Glue, RDS, Quicksight)</a></p>
-            <p><a href="document/pdf/aws_website_performance.pdf">Website Performance Report (AWS, S3, Glue, RDS, Quicksight)</a></p>
-            <p><a href="document/pdf/strategic_risk_management.pdf">Strategic Credit Risk Management (Tableau)</a></p>
-            <p><a href="document/pdf/sales_method_revenue_generation.pdf">Sales Method and Revenue Generation Report (Python)</a></p>
-            <p><a href="document/pdf/newyork_rat_r.pdf">New York Rat Population Report (R)</a></p>
-            <p><a href="document/pdf/sale_forecast_r.pdf">Supply Chain Sales Forecast (R)</a></p>
-            <p><a href="document/pdf/airbnb_textmining_r.pdf">Airbnb Sentimental Analysis (R)</a></p>
+            <h2>Projects</h2>
+            <div class="container">
+                <div>
+                    <h3>Reports</h3>
+                    <table>
+                        <tr>
+                            <td><a href="document/pdf/powerbi_hotel.pdf">Hotel Cancellation Reduction Report (PowerBI)</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="document/pdf/aws_airline.pdf">Airline Delay Report (AWS, S3, Glue, RDS, Quicksight)</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="document/pdf/aws_website_performance.pdf">Website Performance Report (AWS, S3, Glue, RDS, Quicksight)</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="document/pdf/strategic_risk_management.pdf">Strategic Credit Risk Management (Tableau)</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="document/pdf/sales_method_revenue_generation.pdf">Sales Method and Revenue Generation Report (Python)</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="document/pdf/newyork_rat_r.pdf">New York Rat Population Report (R)</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="document/pdf/sale_forecast_r.pdf">Supply Chain Sales Forecast (R)</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="document/pdf/airbnb_textmining_r.pdf">Airbnb Sentimental Analysis (R)</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3>Code</h3>
+                    <table>
+                        <tr>
+                            <td><a href="https://github.com/jamie1016jamie1016/spaceship">Spaceship Onboard Prediction - Kaggle ML competition (Python)</a> | <a href="document/pdf/space_ship.pdf">PDF</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/jamie1016jamie1016/oil_gas_prediction">Oil and Gas Prediction (Python)</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/jamie1016jamie1016/chatwithdata">Chat with Data Webapp (Python, Streamlit, LLM)</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/jamie1016jamie1016/chat_app">Chat App (Java, Android Studio)</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/jamie1016jamie1016/mathgame">Math Game (Java, Android Studio)</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </section>
 
         <section class="project">
-            <h2>Code</h2>
-            <p><a href="https://github.com/jamie1016jamie1016/spaceship">Spaceship Onboard Prediction - Kaggle ML competition (Python)</a> | <a href="document/pdf/space_ship.pdf">PDF</a></p>
-            <p><a href="https://github.com/jamie1016jamie1016/oil_gas_prediction">Oil and Gas Prediction (Python)</a></p>
-            <p><a href="https://github.com/jamie1016jamie1016/chatwithdata">Chat with Data Webapp (Python, Streamlit, LLM)</a></p>
-            <p><a href="https://github.com/jamie1016jamie1016/chat_app">Chat App (Java, Android Studio)</a></p>
-            <p><a href="https://github.com/jamie1016jamie1016/mathgame">Math Game (Java, Android Studio)</a></p>
-        </section>
-        <section class="project">
             <h2>My Certifications</h2>
         
-            <div class="certificate">
-                <h3>DataCamp Data Analyst</h3>
-                <iframe src="document/certificate/DataCamp DA.pdf"></iframe>
-            </div>
-        
-            <div class="certificate">
-                <h3>Google Data Analyst</h3>
-                <iframe src="document/certificate/Google DA.pdf"></iframe>
-            </div>
-        
-            <div class="certificate">
-                <h3>Google Business Intelligence</h3>
-                <iframe src="document/certificate/Google BI.pdf"></iframe>
-            </div>
-        
-            <div class="certificate">
-                <h3>HackerRank SQL Advanced Certificate</h3>
-                <iframe src="document/certificate/HackerRank sql_advanced certificate.pdf"></iframe>
-            </div>
-        
-            <div class="certificate">
-                <h3>DeepLearning.AI TensorFlow</h3>
-                <iframe src="document/certificate/DeepLearning_AI Tensorflow .pdf"></iframe>
-            </div>
-        
-            <div class="certificate">
-                <h3>AWS Academy Cloud Foundations Badge</h3>
-                <iframe src="document/certificate/AWS_Academy_Cloud_Foundations_Badge.pdf"></iframe>
-            </div>
-        
-            <div class="certificate">
-                <h3>AWS Academy Machine Learning Foundations Badge</h3>
-                <iframe src="document/certificate/AWS_Academy_Machine_Learning_Foundations_Badge.pdf"></iframe>
+            <div class="certificates-grid">
+                <div class="certificate">
+                    <h3>DataCamp Data Analyst</h3>
+                    <iframe src="document/certificate/DataCamp DA.pdf"></iframe>
+                </div>
+            
+                <div class="certificate">
+                    <h3>Google Data Analyst</h3>
+                    <iframe src="document/certificate/Google DA.pdf"></iframe>
+                </div>
+            
+                <div class="certificate">
+                    <h3>Google Business Intelligence</h3>
+                    <iframe src="document/certificate/Google BI.pdf"></iframe>
+                </div>
+            
+                <div class="certificate">
+                    <h3>HackerRank SQL Advanced Certificate</h3>
+                    <iframe src="document/certificate/HackerRank sql_advanced certificate.pdf"></iframe>
+                </div>
+            
+                <div class="certificate">
+                    <h3>DeepLearning.AI TensorFlow</h3>
+                    <iframe src="document/certificate/DeepLearning_AI Tensorflow .pdf"></iframe>
+                </div>
+            
+                <div class="certificate">
+                    <h3>AWS Academy Cloud Foundations Badge</h3>
+                    <iframe src="document/certificate/AWS_Academy_Cloud_Foundations_Badge.pdf"></iframe>
+                </div>
+            
+                <div class="certificate">
+                    <h3>AWS Academy Machine Learning Foundations Badge</h3>
+                    <iframe src="document/certificate/AWS_Academy_Machine_Learning_Foundations_Badge.pdf"></iframe>
+                </div>
             </div>
         
         </section>
