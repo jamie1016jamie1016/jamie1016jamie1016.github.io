@@ -145,26 +145,22 @@
             color: #ffcb74;
         }
 
-        /* Responsive adjustments */
+        /* Additional styles for mobile-specific section */
+        .mobile-section {
+            display: none; /* Hidden by default */
+            background-color: #0f3460; /* Deep purple */
+            color: #eaeaea;
+            text-align: center;
+            padding: 2em 0;
+            margin: 2em 0;
+            border-top: 3px solid #00adb5; /* Vibrant cyan */
+            border-bottom: 3px solid #00adb5; /* Vibrant cyan */
+        }
+
+        /* Display mobile section only on small screens */
         @media (max-width: 768px) {
-            main {
-                padding: 1em;
-            }
-
-            header {
-                font-size: 2em;
-            }
-
-            .card {
-                padding: 15px;
-            }
-
-            .certificate {
-                padding: 15px;
-            }
-
-            .certificate iframe {
-                height: 200px;
+            .mobile-section {
+                display: block; /* Show on mobile screens */
             }
         }
     </style>
@@ -174,6 +170,12 @@
         Jamie Yan Portfolio
     </header>
     <main>
+        <section class="mobile-section">
+            <h2>Welcome Mobile User!</h2>
+            <p>Thank you for visiting my portfolio on your mobile device. Here is a quick overview of my work and achievements tailored just for you!</p>
+            <a href="#projects">View My Projects</a>
+        </section>
+        
         <section class="project">
             <h2>Projects</h2>
             <div class="container">
@@ -183,12 +185,12 @@
                     <a href="document/pdf/powerbi_hotel.pdf">View Report</a>
                 </div>
                 <div class="card">
-                    <h3>Airline Delay Report&nbsp;(AWS, S3, Glue, RDS, Quicksight)</h3>
+                    <h3>Airline Delay Report<br>(AWS, S3, Glue, RDS, Quicksight)</h3>
                     <p>This project involves analyzing airline delay data, leveraging AWS services to extract, transform, and visualize the data.</p>
                     <a href="document/pdf/aws_airline.pdf">View Report</a>
                 </div>
                 <div class="card">
-                    <h3>Website Performance Report&nbsp;(AWS, S3, Glue, RDS, Quicksight)</h3>
+                    <h3>Website Performance Report<br>(AWS, S3, Glue, RDS, Quicksight)</h3>
                     <p>This report evaluates website performance, using AWS tools to monitor and optimize site speed and reliability.</p>
                     <a href="document/pdf/aws_website_performance.pdf">View Report</a>
                 </div>
@@ -203,7 +205,7 @@
                     <a href="document/pdf/sales_method_revenue_generation.pdf">View Report</a>
                 </div>
                 <div class="card">
-                    <h3>New York Rat Population Report&nbsp;(R)</h3>
+                    <h3>New York Rat Population Report (R)<br><br></h3>
                     <p>Exploration of the rat population in New York City, using R for data analysis and visualization of population trends.</p>
                     <a href="document/pdf/newyork_rat_r.pdf">View Report</a>
                 </div>
@@ -226,26 +228,26 @@
                 <div class="card">
                     <h3>Spaceship Onboard Prediction - Kaggle ML competition&nbsp;(Python)</h3>
                     <p>This project focuses on predicting which passengers will survive in a fictional spaceship disaster, using various machine learning techniques.</p>
-                    <a href="https://github.com/jamie1016jamie1016/spaceship">View Repository</a> | 
+                    <a href="https://github.com/jamie1016jamie1016/spaceship">View Repository</a>
                     <a href="document/pdf/space_ship.pdf">View Analysis Report</a>
                 </div>
                 <div class="card">
-                    <h3>Oil and Gas Prediction&nbsp;(Python)</h3>
+                    <h3>Oil and Gas Prediction<br>(Python)</h3>
                     <p>Predicts the future potential of oil and gas wells based on historical data, applying regression models and data analysis techniques.</p>
                     <a href="https://github.com/jamie1016jamie1016/oil_gas_prediction">View Repository</a>
                 </div>
                 <div class="card">
-                    <h3>Chat with Data Webapp&nbsp;(Python, Streamlit, LLM)</h3>
+                    <h3>Chat with Data Webapp<br>(Python, Streamlit, LLM)</h3>
                     <p>This web app allows users to upload datasets and interact with them, using a large language model (LLM) to answer questions and generate insights.</p>
                     <a href="https://github.com/jamie1016jamie1016/chatwithdata">View Repository</a>
                 </div>
                 <div class="card">
-                    <h3>Chat App&nbsp;(Java, Android Studio)</h3>
+                    <h3>Chat App<br>(Java, Android Studio)</h3>
                     <p>A real-time chat application built using Java and Android Studio, allowing users to register, login, and communicate with each other.</p>
                     <a href="https://github.com/jamie1016jamie1016/chat_app">View Repository</a>
                 </div>
                 <div class="card">
-                    <h3>Math Game&nbsp;(Java, Android Studio)</h3>
+                    <h3>Math Game<br>(Java, Android Studio)</h3>
                     <p>A simple math game developed as an Android app, designed to improve basic arithmetic skills through interactive gameplay.</p>
                     <a href="https://github.com/jamie1016jamie1016/mathgame">View Repository</a>
                 </div>

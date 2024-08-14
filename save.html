@@ -145,22 +145,26 @@
             color: #ffcb74;
         }
 
-        /* Additional styles for mobile-specific section */
-        .mobile-section {
-            display: none; /* Hidden by default */
-            background-color: #0f3460; /* Deep purple */
-            color: #eaeaea;
-            text-align: center;
-            padding: 2em 0;
-            margin: 2em 0;
-            border-top: 3px solid #00adb5; /* Vibrant cyan */
-            border-bottom: 3px solid #00adb5; /* Vibrant cyan */
-        }
-
-        /* Display mobile section only on small screens */
+        /* Responsive adjustments */
         @media (max-width: 768px) {
-            .mobile-section {
-                display: block; /* Show on mobile screens */
+            main {
+                padding: 1em;
+            }
+
+            header {
+                font-size: 2em;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            .certificate {
+                padding: 15px;
+            }
+
+            .certificate iframe {
+                height: 200px;
             }
         }
     </style>
@@ -170,12 +174,6 @@
         Jamie Yan Portfolio
     </header>
     <main>
-        <section class="mobile-section">
-            <h2>Welcome Mobile User!</h2>
-            <p>Thank you for visiting my portfolio on your mobile device. Here is a quick overview of my work and achievements tailored just for you!</p>
-            <a href="#projects">View My Projects</a>
-        </section>
-        
         <section class="project">
             <h2>Projects</h2>
             <div class="container">
